@@ -22,10 +22,6 @@ export const sendEmail=async({email,emailType,userId}:any)=>{
       const transporter = nodemailer.createTransport({
         host: "sandbox.smtp.mailtrap.io",
         port: 2525,
-        auth: {
-          user: "90e8c756c5fa7c",//Don't put here
-          pass: "********b110"//Don't put here
-        }
       });
           const mailOptions={
             from: 'ayush@gmail.ai',
